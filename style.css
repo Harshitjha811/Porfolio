@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+.main{
+    position: relative;
+    overflow: hidden;
+}
+#page{
+    position: relative;
+    height: 100vh;
+    
+}
+
+header{
+    height: 5vw;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    background-color: teal;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+#logo{
+    border-radius: 50% ;
+    height: 50px;
+    width: 50px;
+}
+
+h3{
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
+    color: white;
+    letter-spacing: 3px;
+    font-size: 35px;
+}
+
+.centre-nav{
+    display: flex;
+    gap: 30px;
+}
+
+.centre-nav>a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.photo{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 90%;
+    width: 33vw;
+    position: absolute;
+    right: 0;
+    margin-top: 5%;
+    box-shadow: -1px -1px 20px  black ;
+    animation: slider 35s infinite ease ;
+}
+
+@keyframes slider {
+    0%{background-image: url(./img/img_0.jpg);}
+    25%{background-image: url(./img/img_1.jpeg);}
+    50%{ background-image: url(./img/img_2.jpeg);}
+    75%{background-image: url(./img/img_3.jpeg) ;}
+    100%{background-image: url(./img/img_4.jpg) ;}
+    
+}
+
+.back-circle{
+    height: 80%;
+    width: 40%;
+    position: relative;
+    border-bottom-right-radius: 50%;
+    padding: 0;
+    margin: 0;
+    box-shadow: inset 0px -2px 8px 5px  rgba(128, 128, 128, 0.527) 
+                ,-1px 2px 10px 2px black;
+}
+
+.text{
+    margin-top: 0%;
+    padding: 30px 50px;
+    height: 80% ;
+    width: 80%;
+    position:absolute ;
+    top: 15%;
+    left: 10%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.text>h5{
+    color: teal;
+    transform: rotate(-25deg);
+    position: absolute;
+    left: 3%;
+}
+
+.text>h1{
+    margin-top: 15px;
+    font-size: 4vw;
+    text-transform: capitalize;
+    color: teal;
+    text-shadow:  1px 1px 4px grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text>h4{
+    margin-top: 15px;
+    font-size: 1vw;
+    font-weight: 500;
+    color: darkslategray;
+    /* line-height: 0%; */
+    letter-spacing: 0;
+    
+}
+
+
+/* -----------------page1----- SKILL PAGE------------------------------------- */
+
+
+.page1{
+    position: relative;
+    height: 80vh;
+}
+
+#projects{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60%;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+}
+
+.project-div{
+    height: 90%;
+    width: 30%;
+}
+
+/* project image heading  */
+#h2-text{  
+    text-align: center;
+    height: 12%;
+    letter-spacing: 2.5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 5px;
+    padding-top: 5px ;
+}
+
+#c-img{
+    background-image: url(./img/skill_C.png);
+    background-size: contain ;
+    background-repeat: no-repeat;
+    margin-left: 5%;
+    margin-top: 5%;
+    height: 70%;
+    width: 90%;
+    box-shadow: 5px 5px 8px 1px grey;
+}
+
+#html-img2{
+    background-image: url(./img/skill_HTML_CS_JS.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5%;
+    margin-top: 2%;
+    height: 70%;
+    width: 90%;
+    box-shadow: 0px 5px 10px 1px grey;
+}
+
+#excel-img3{
+    background-image: url(./img/skill_excel.png);
+    background-size: cover;
+    margin-left: 5%;
+    margin-top: 2%;
+    height: 70%;
+    width: 90%;
+    box-shadow: -3px 5px 8px 1px grey;
+}
+
+.p2{
+    position: relative;
+    top: -25%;
+}
+
+.p3{
+    position: relative;
+    top: -50%;
+}
+
+#project-heading{
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    height: 20%;
+    width: 30%;
+}
+
+
+
+/* -------------------------------page2---------------------------------- */
+
+
+.page1{
+    position: relative;
+    height: 80vh;
+}
+
+#projects{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60%;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+}
+
+.project-div{
+    height: 90%;
+    width: 30%;
+}
+
+/* project image heading  */
+#h2-text{  
+    text-align: center;
+    height: 12%;
+    letter-spacing: 2.5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 5px;
+    padding-top: 5px ;
+}
+
+#project-img{
+    background-image: url(./img/project_portfolio.png);
+    background-size: contain ;
+    background-repeat: no-repeat;
+    margin-left: 5%;
+    margin-top: 5%;
+    height: 70%;
+    width: 90%;
+    box-shadow: 5px 5px 8px 1px grey;
+}
+
+#project-img2{
+    background-image: url(./img/project_landing_page.jpg);
+    background-size: cover;
+    margin-left: 5%;
+    margin-top: 2%;
+    height: 70%;
+    width: 90%;
+    box-shadow: 0px 5px 10px 1px grey;
+}
+
+#project-img3{
+    background-image: url(./img/project_calculator.png);
+    background-size: cover;
+    margin-left: 5%;
+    margin-top: 2%;
+    height: 70%;
+    width: 90%;
+    box-shadow: -3px 5px 8px 1px grey;
+}
+
+.p2{
+    position: relative;
+    top: -25%;
+}
+
+.p3{
+    position: relative;
+    top: -50%;
+}
+
+#project-heading{
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    height: 20%;
+    width: 30%;
+}
+
+
+
+/* -------------------------------page3---------------------------------- */
+
+.page2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: inset 0px -10px 100px 40px rgb(205, 205, 205);
+    height: 40vh;
+    width: 100%;
+}
+
+#contacts{
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
+    color: white;
+    letter-spacing: 3px;
+    font-size: 35px;
+    text-shadow: 1px 0px 4px black;
+}
+
+
+.part{   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+    width: 45%;
+}
+#inner{
+    height: 95%;
+    width: 95%;
+    padding-left: 2%;
+}
+
+
+
+input{
+    border-radius: 5px;
+    border: none;
+    margin-top: 1%;
+    padding-left: 2%;
+    height: 15%;
+    width: 80%;
+    box-shadow: 0px 0px 3px teal;
+
+}
+
+.left>#details>p{
+    color: rgb(84, 81, 81);
+    letter-spacing: 2px;
+
+}
+strong{
+    color: rgba(24, 24, 24, 0.86);
+    font-size: 15px;
+}
+
+h4{
+    font-weight: 100;
+}
+
+#feedback{
+    height: 55% ;
+    
+}
+
+button{
+    margin-top: 1%;
+    font-size: 70%;
+    height: 10%;
+    width: 20%;
+    margin-left: 60%;
+}
+
+/* -------------------------------footer---------------------------------- */
+
+footer{
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    background-color: teal;
+    height: 7%;
+    width: 100%;
+    z-index: 5;
+}
+p,footer>a{
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+footer>a{
+    text-decoration: none;
+    color: black;
+}
