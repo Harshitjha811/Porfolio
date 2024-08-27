@@ -473,7 +473,11 @@ footer>a{
         font-size: 1.2rem;
         letter-spacing: normal;
     }
-
+    
+    #skill {
+        display:none;
+    }
+    
     .centre-nav{
         position: absolute;
         display: flex ;
