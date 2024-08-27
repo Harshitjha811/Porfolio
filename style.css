@@ -39,6 +39,8 @@ h3{
     color: white;
     letter-spacing: 3px;
     font-size: 35px;
+    /* text-align: center; */
+    /* margin-left: 150px; */
 }
 
 .centre-nav{
@@ -75,6 +77,7 @@ h3{
 }
 
 .back-circle{
+    /* margin-top: 500px; */
     height: 80%;
     width: 40%;
     position: relative;
@@ -83,10 +86,12 @@ h3{
     margin: 0;
     box-shadow: inset 0px -2px 8px 5px  rgba(128, 128, 128, 0.527) 
                 ,-1px 2px 10px 2px black;
+                /* background-color: aqua; */
+                /* opacity: 1; */
 }
 
 .text{
-    margin-top: 0%;
+    margin-top: 12%;
     padding: 30px 50px;
     height: 80% ;
     width: 80%;
@@ -130,6 +135,7 @@ h3{
 .page1{
     position: relative;
     height: 80vh;
+    /* background-color: aqua; */
 }
 
 #projects{
@@ -142,6 +148,7 @@ h3{
     left: 50%;
     transform: translateX(-50%);
     bottom: 5%;
+    /* background-color: azure; */
 }
 
 .project-div{
@@ -162,7 +169,7 @@ h3{
 
 #c-img{
     background-image: url(./img/skill_C.png);
-    background-size: contain ;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     margin-left: 5%;
     margin-top: 5%;
@@ -173,7 +180,7 @@ h3{
 
 #html-img2{
     background-image: url(./img/skill_HTML_CS_JS.jpg);
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     margin-left: 5%;
     margin-top: 2%;
@@ -184,7 +191,7 @@ h3{
 
 #excel-img3{
     background-image: url(./img/skill_excel.png);
-    background-size: cover;
+    background-size: 100% 100%;
     margin-left: 5%;
     margin-top: 2%;
     height: 70%;
@@ -237,6 +244,11 @@ h3{
     width: 30%;
 }
 
+.project-div:hover{
+    scale: 1.1;
+    transition: 0.2s ease ;
+}
+
 /* project image heading  */
 #h2-text{  
     text-align: center;
@@ -248,9 +260,20 @@ h3{
     padding-top: 5px ;
 }
 
+#h2-text a{
+    text-decoration: none;
+    color: black;
+}
+
+#h2-text a:hover{
+    color: blue;
+    
+
+}
+
 #project-img{
     background-image: url(./img/project_portfolio.png);
-    background-size: contain ;
+    background-size: 100% 100% ;
     background-repeat: no-repeat;
     margin-left: 5%;
     margin-top: 5%;
@@ -261,7 +284,7 @@ h3{
 
 #project-img2{
     background-image: url(./img/project_landing_page.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     margin-left: 5%;
     margin-top: 2%;
     height: 70%;
@@ -271,7 +294,7 @@ h3{
 
 #project-img3{
     background-image: url(./img/project_calculator.png);
-    background-size: cover;
+    background-size: 100% 100%;
     margin-left: 5%;
     margin-top: 2%;
     height: 70%;
@@ -329,6 +352,7 @@ h3{
     height: 90%;
     width: 45%;
 }
+
 #inner{
     height: 95%;
     width: 95%;
@@ -353,6 +377,14 @@ input{
     letter-spacing: 2px;
 
 }
+
+p a{
+    text-decoration: none;
+    color: rgb(84, 81, 81);
+}
+
+
+
 strong{
     color: rgba(24, 24, 24, 0.86);
     font-size: 15px;
@@ -399,3 +431,303 @@ footer>a{
     text-decoration: none;
     color: black;
 }
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) and (min-width: 360px){
+
+    *{
+        /* all: unset; */
+        /* overflow-x: hidden; */
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;}
+
+    header{
+        all: unset;
+        height: 5vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 9;
+        display: flex;
+        align-items: center;
+        background-color: teal;
+        padding: 15px;
+        }
+
+    #logo{
+        height: 4vh;
+        width: 10vw;
+    }
+
+    header>h3{
+        margin-left: 2%;
+        top: 0;
+        font-size: 1.2rem;
+        letter-spacing: normal;
+    }
+
+    .centre-nav{
+        position: absolute;
+        display: flex ;
+        /* flex-direction: column; */
+        gap: 8px;
+        right: 12%;
+    }
+
+    .centre-nav>a{
+       
+        font-size: 0.5rem;
+    }
+     .intro{
+        position: relative;
+        height: 100%;
+        /* background-color: beige; */
+        display: flex;
+        flex-direction: column;
+        
+     }
+    .photo{
+        position: absolute;
+        bottom: 5%;
+        background-color: aqua;
+        /* margin-top: 80%; */
+        height: 40%;
+        width: 60vw;
+        margin-right: 20% ;
+
+
+        
+    }
+
+    .back-circle{
+        all: unset;
+        margin-top: 18%;
+        height: 35%;
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        /* background-color: rgb(212, 66, 66); */
+    }
+
+    .text{
+        height: auto;
+        /* background-color: blueviolet; */
+        margin-top: 20%;
+        top: 0;
+        
+    }
+
+    .text>h1{
+        font-size: 1.8rem;
+        text-shadow:1px 1px 3px ;
+    }
+
+    .text>h4{
+        font-size: 0.6rem;
+    }
+
+    .text>h5{
+        left: 10vw;
+        font-size: 0.7rem;
+    }
+
+    
+    .page1{
+        all: unset;
+        border-top: 1px solid grey;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+        /* background-color: rgb(197, 140, 65); */
+        overflow: hidden;
+        position: relative;
+    }
+
+    #project-heading{
+        overflow: hidden;
+        height: 8%;
+        width: 100%;
+        top: 0%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        /* background-color: blueviolet; */
+    }
+    #project-heading>h1{
+        transform: none;
+        /* margin-top: 0%; */
+        font-size: 1.3rem;
+        height: 100%;
+        /* background-color: aqua; */
+        font-weight: 1000;
+    }
+
+
+    #projects{
+        
+        /* margin-left: -55PX; */
+        margin-top: 30%;
+        padding: 0;
+        overflow-y: scroll;
+        /* background-color: rgb(204, 182, 182); */
+        height: 90vh ;
+        width: 85vw;
+        flex-direction: column;
+        position: relative;
+        /* justify-content: start; */
+    }
+    
+    .project-div{
+        height: 30%;
+        width: 90%;
+        /* background-color: aqua; */
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: none;
+        /* width: 80%; */
+
+    }
+
+    #h2-text{
+        margin: 0;
+        font-size: 0.6rem;
+        letter-spacing: normal;
+    }
+
+    footer{
+        /* all: unset; */
+        height: 8%;
+        width: 100%;
+        position: absolute;
+        z-index: 9;
+        background-color: teal;
+        flex-direction: column-reverse;
+        padding: 15px;
+     }
+
+     p,#btt{
+        font-size: 0.6rem;
+        letter-spacing: normal;
+        
+     }
+
+    
+     h6{
+        display: none;
+     }
+
+     /* -------------------------conatact page-------------------  */
+
+     
+
+     .page2{
+        all: unset;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        /* justify-content: center; */
+        /* background-color: rgba(62, 168, 168, 0.402); */
+        /* box-shadow: inset 0px -10px 100px 40px rgb(205, 205, 205); */
+        height: 60vh;
+        width: 100%;
+    
+        overflow: hidden;
+    }
+    
+    .part{
+        all: unset;
+        display: flex;
+        
+
+    
+
+    }
+
+    .right{
+        all: unset;
+        /* background-color: blueviolet; */
+        height: 50%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left{
+        background-color: rgba(0, 128, 128, 0.272);
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 15%;
+        justify-content: center;
+    }
+
+    .left>h3{
+        display: none;
+    }
+
+    #inner{
+        all: unset;
+        height: 100%;
+        width: 100%;
+        /* background-color: yellowgreen; */
+        flex-direction: column;
+        padding-top: 2%;
+        gap: 0%;
+       
+    }
+
+    #inner>input{
+        border: 1px solid grey;
+        margin-left: 10%;
+        box-shadow: none;
+        /* all: unset; */
+    }
+
+    #sendbtn{
+        height: 12%;
+        width: 30%;
+        padding: 0;
+        margin-left: 35%;
+        font-family: Arial, Helvetica, sans-serif;
+        background: none;
+        border: none;
+        font-size: 0.8rem;
+        font-weight: 500;
+        /* color: white; */
+        /* text-align: center; */
+    }
+
+    #contactdtl{
+        font-size: 0.7rem;
+    }
+
+
+    strong{
+        color: rgba(24, 24, 24, 0.86);
+        font-size: 0.8rem;
+    }
+    
+    }
+
+
+
